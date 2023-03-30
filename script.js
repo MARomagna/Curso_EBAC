@@ -15,3 +15,6 @@ $("form").on("submit", function (e) {
   $(novoItem).fadeIn(1000);
   $("#nova-tarefa").val("");
 });
+$("li").click(function () {
+  $("li").addClass("completado");
+});

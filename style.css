@@ -32,10 +32,6 @@ form input {
 ul {
   list-style: none;
 }
-li {
-  cursor: pointer;
-  padding: 5px;
-}
-li:hover {
+.conpleto {
   text-decoration: line-through;
 }
