@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Lista de Tarefas</title>
 </head>
 
 <body>
-  <h1>Cadastro</h1>
-  <form><Label for="nome">Seu Nome</Label><br><input id="nome" type="text" placeholder="Nome Completo"><br>
-    <label for="email">Email</label><input id="email" type="email" placeholder="teste@teste.com.br"><br> <label for="senha">Senha</label><input id="senha" type="password"><br>
+  <header>
+    <h1>Lista de Tarefas</h1>
+    <button type="submit">Nova Tarefa</button>
+  </header>
+  <form>
+    <input type="text" id="nova-tarefa" required placeholder="Digite a tarefa">
     <button type="submit">Cadastrar</button>
+    <button type="reset" id="botao-cancelar">Cancelar</button>
+    <ul>
+      <li id="click">
+      </li>
+    </ul>
   </form>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
